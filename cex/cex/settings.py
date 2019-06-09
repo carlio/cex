@@ -30,14 +30,19 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
+PROJECT_APPS = ['core', 'users']
+DJANGO_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+INSTALLED_APPS = PROJECT_APPS + DJANGO_APPS
+if DEBUG:
+    INSTALLED_APPS += [
+        'django.contrib.admin'
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
