@@ -51,3 +51,7 @@ db.sqlite3
 _media
 _static
 
+
+private.txt
+env.txt
+

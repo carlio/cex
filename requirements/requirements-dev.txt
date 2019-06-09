@@ -1,0 +1,8 @@
+-r requirements-test.txt
+django-extensions==2.1.7
+django-request-logging==0.7.0
+ipython==7.5.0
+ipython-genutils==0.2.0
+pre-commit==1.17.0
+prospector==1.1.6.2
+readline==6.2.4.1
