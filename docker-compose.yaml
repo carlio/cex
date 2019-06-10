@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=cex
+      - POSTGRES_PASSWORD=gdptjQsGsqqZgwPy65pZAikiufPMEi
+      - POSTGRES_DB=cex
+    ports:
+      - 7501:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  broker:
+    image: rabbitmq:latest
+    ports:
+      - 7502:5672
+    volumes:
+      - rabbitdata:/var/lib/rabbitmq
+    logging:
+      driver: none
+
+volumes:
+  pgdata:
+  rabbitdata:

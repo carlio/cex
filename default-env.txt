@@ -1,0 +1,5 @@
+export SECRET_KEY=m23Cd3xP8MTA5fNFYJn3oCpoGCt8tPzAHmF3WVfL494Mo
+export DEBUG=True
+export EMAIL_URL=consolemail://
+export DATABASE_URL=postgres://cex:gdptjQsGsqqZgwPy65pZAikiufPMEi@localhost:7501/cex
+export CELERY_BROKER_URL='amqp://guest:guest@localhost:7502'
