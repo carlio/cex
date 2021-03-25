@@ -11,7 +11,7 @@ django-registration-redux==2.6
 django-statsd-mozilla==0.4.0
 gunicorn==19.9.0
 psycopg2-binary==2.8.2
-PyYAML==5.1.1
+PyYAML==5.4
 raven==6.10.0
 requests==2.22.0
 requests-oauthlib==1.2.0
